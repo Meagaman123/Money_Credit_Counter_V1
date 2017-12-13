@@ -110,6 +110,7 @@
             this.twoPounds.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.twoPounds.TabIndex = 7;
             this.twoPounds.TabStop = false;
+            this.twoPounds.Click += new System.EventHandler(this.twoPounds_Click);
             // 
             // Pound
             // 
@@ -122,6 +123,7 @@
             this.Pound.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Pound.TabIndex = 6;
             this.Pound.TabStop = false;
+            this.Pound.Click += new System.EventHandler(this.Pound_Click);
             // 
             // FifteyPence
             // 
@@ -210,6 +212,7 @@
             this.Coins.Name = "Coins";
             this.Coins.Size = new System.Drawing.Size(303, 576);
             this.Coins.TabIndex = 8;
+            this.Coins.SelectedIndexChanged += new System.EventHandler(this.Coins_SelectedIndexChanged);
             // 
             // listBox2
             // 
@@ -341,6 +344,7 @@
             this.label2.Size = new System.Drawing.Size(30, 31);
             this.label2.TabIndex = 29;
             this.label2.Text = "0";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -352,6 +356,7 @@
             this.label3.Size = new System.Drawing.Size(30, 31);
             this.label3.TabIndex = 30;
             this.label3.Text = "0";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -363,6 +368,7 @@
             this.label4.Size = new System.Drawing.Size(30, 31);
             this.label4.TabIndex = 31;
             this.label4.Text = "0";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -621,6 +627,7 @@
             this.CostPerCredit.TabIndex = 54;
             this.CostPerCredit.Text = "0";
             this.CostPerCredit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CostPerCredit.TextChanged += new System.EventHandler(this.CostPerCredit_TextChanged);
             // 
             // label26
             // 
