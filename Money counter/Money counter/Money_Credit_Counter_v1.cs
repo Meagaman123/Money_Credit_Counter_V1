@@ -22,15 +22,16 @@ namespace WindowsFormsApplication1
         int fiftyp;
         int onepound;
         int twopound;
-
+        
         public Form1()
         {
             InitializeComponent();
+         
         }
-
+        
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -51,6 +52,10 @@ namespace WindowsFormsApplication1
                 int coins = fivep++;//increases the interger by one
                 string numofcoin = fivep.ToString();//turns interger into a string and then displays it in the label
                 label4.Text = numofcoin;
+                int total = Convert.ToInt32(textBox2.Text);
+                total = total + 5;
+                string totals = total.ToString();
+                textBox2.Text = totals;
             }
         }
 
@@ -67,6 +72,13 @@ namespace WindowsFormsApplication1
                 int coins = tenp++;//increases the interger by one
                 string numofcoin = tenp.ToString();//turns interger into a string and then displays it in the label
                 label5.Text = numofcoin;
+
+
+                //takes the current string in the text box converts it to a string and then adds the apropriate number to the total then converts it back to a string n displays it.
+                int total = Convert.ToInt32(textBox2.Text);
+                total = total + 10;
+                string totals = total.ToString();
+                textBox2.Text = totals;
             }
         }
 
@@ -83,6 +95,13 @@ namespace WindowsFormsApplication1
                 int coins = fiftyp++;//increases the interger by one
                 string numofcoin = fiftyp.ToString();//turns interger into a string and then displays it in the label
                 label7.Text = numofcoin;
+
+
+                //takes the current string in the text box converts it to a string and then adds the apropriate number to the total then converts it back to a string n displays it.
+                int total = Convert.ToInt32(textBox2.Text);
+                total = total + 50;
+                string totals = total.ToString();
+                textBox2.Text = totals;
             }
         }
 
@@ -99,6 +118,13 @@ namespace WindowsFormsApplication1
                 int coins = twentyp++;//increases the interger by one
                 string numofcoin = twentyp.ToString();//turns interger into a string and then displays it in the label
                 label6.Text = numofcoin;
+
+
+                //takes the current string in the text box converts it to a string and then adds the apropriate number to the total then converts it back to a string n displays it.
+                int total = Convert.ToInt32(textBox2.Text);
+                total = total + 20;
+                string totals = total.ToString();
+                textBox2.Text = totals;
             }
         }
 
@@ -116,6 +142,13 @@ namespace WindowsFormsApplication1
                 int coins = onep++;//increases the interger by one
                 string numofcoin = onep.ToString();//turns interger into a string and then displays it in the label
                 label2.Text = numofcoin;
+
+
+                //takes the current string in the text box converts it to a string and then adds the apropriate number to the total then converts it back to a string n displays it.
+                int total = Convert.ToInt32(textBox2.Text);
+                total = total + 1;
+                string totals = total.ToString();
+                textBox2.Text = totals;
             }
         }
 
@@ -132,6 +165,13 @@ namespace WindowsFormsApplication1
                 int coins = twop++;//increases the interger by one
                 string numofcoin = twop.ToString();//turns interger into a string and then displays it in the label
                 label3.Text = numofcoin;
+
+
+                //takes the current string in the text box converts it to a string and then adds the apropriate number to the total then converts it back to a string n displays it.
+                int total = Convert.ToInt32(textBox2.Text);
+                total = total + 2;
+                string totals = total.ToString();
+                textBox2.Text = totals;
             }
         }
 
@@ -158,11 +198,7 @@ namespace WindowsFormsApplication1
         private void CostPerCredit_TextChanged(object sender, EventArgs e)
         {
             int x = int.Parse(CostPerCredit.Text);//takes the cost percredit and makes it an interger so that we can check if its less than or equal to 0
-            if (x <= 0)
-            {
-                MessageBox.Show("Please insert an interger above 0 in cost per credit", "Credit error",
-    MessageBoxButtons.OK, MessageBoxIcon.Error);//error message if the text box has a interger less than or equal to 0
-            }
+        
         }
 
         private void Pound_Click(object sender, EventArgs e)
@@ -178,6 +214,13 @@ namespace WindowsFormsApplication1
                 int coins = onepound++;//increases the interger by one
                 string numofcoin = onepound.ToString();//turns interger into a string and then displays it in the label
                 label8.Text = numofcoin;
+
+
+                //takes the current string in the text box converts it to a string and then adds the apropriate number to the total then converts it back to a string n displays it.
+                int total = Convert.ToInt32(textBox2.Text);
+                total = total + 100;
+                string totals = total.ToString();
+                textBox2.Text = totals;
             }
         }
 
@@ -194,6 +237,13 @@ namespace WindowsFormsApplication1
                 int coins = twopound++;//increases the interger by one
                 string numofcoin = twopound.ToString();//turns interger into a string and then displays it in the label
                 label9.Text = numofcoin;
+
+
+                //takes the current string in the text box converts it to a string and then adds the apropriate number to the total then converts it back to a string n displays it.
+                int total = Convert.ToInt32(textBox2.Text);
+                total = total + 200;
+                string totals = total.ToString();
+                textBox2.Text = totals;
             }
         }
 
@@ -215,6 +265,11 @@ namespace WindowsFormsApplication1
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
