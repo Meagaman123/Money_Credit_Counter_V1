@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class Form1
+    partial class MoneyCreditCounterv
     {
         /// <summary>
         /// Required designer variable.
@@ -618,6 +618,7 @@
             this.NumberCredits.TabIndex = 53;
             this.NumberCredits.Text = "0";
             this.NumberCredits.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumberCredits.TextChanged += new System.EventHandler(this.NumberCredits_TextChanged);
             // 
             // CostPerCredit
             // 
@@ -669,6 +670,7 @@
             this.textBox1.TabIndex = 58;
             this.textBox1.Text = "0.00";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -691,7 +693,7 @@
             this.label29.TabIndex = 60;
             this.label29.Text = "To Buy Credits";
             // 
-            // Form1
+            // MoneyCreditCounterv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -750,8 +752,11 @@
             this.Controls.Add(this.TenPence);
             this.Controls.Add(this.OnePence);
             this.Controls.Add(this.Coins);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "MoneyCreditCounterv";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Money Credit Counter v2.0";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.twoPounds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pound)).EndInit();

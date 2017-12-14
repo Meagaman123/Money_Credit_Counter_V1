@@ -11,7 +11,7 @@ using MyDialogs;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form1 : Form
+    public partial class MoneyCreditCounterv : Form
     {
         //varible initialization
         int onep;
@@ -23,7 +23,7 @@ namespace WindowsFormsApplication1
         int onepound;
         int twopound;
         
-        public Form1()
+        public MoneyCreditCounterv()
         {
             InitializeComponent();
          
@@ -56,6 +56,19 @@ namespace WindowsFormsApplication1
                 total = total + 5;
                 string totals = total.ToString();
                 textBox2.Text = totals;
+
+
+                // takes the new total and divides it by 100 and then turns the result into a decimal it then converts that to a string and prints it.
+                decimal totalindec = (decimal)total / 100;
+                string dec_total = totalindec.ToString();
+                textBox1.Text = dec_total;
+
+
+                //divids total with number of credits and then turns the answer into a string and then prints
+                int credits = total / x;
+                string Ncredits = credits.ToString();
+                NumberCredits.Text = Ncredits;
+
             }
         }
 
@@ -79,6 +92,18 @@ namespace WindowsFormsApplication1
                 total = total + 10;
                 string totals = total.ToString();
                 textBox2.Text = totals;
+                
+                // takes the new total and divides it by 100 and then turns the result into a decimal it then converts that to a string and prints it.
+                decimal totalindec = (decimal)total / 100;
+                string dec_total = totalindec.ToString();
+                textBox1.Text = dec_total;
+
+
+                //divids total with number of credits and then turns the answer into a string and then prints
+                int credits = total / x;
+                string Ncredits = credits.ToString();
+                NumberCredits.Text = Ncredits;
+
             }
         }
 
@@ -102,6 +127,19 @@ namespace WindowsFormsApplication1
                 total = total + 50;
                 string totals = total.ToString();
                 textBox2.Text = totals;
+
+
+                // takes the new total and divides it by 100 and then turns the result into a decimal it then converts that to a string and prints it.
+                decimal totalindec = (decimal)total / 100;
+                string dec_total = totalindec.ToString();
+                textBox1.Text = dec_total;
+
+
+                //divids total with number of credits and then turns the answer into a string and then prints
+                int credits = total / x;
+                string Ncredits = credits.ToString();
+                NumberCredits.Text = Ncredits;
+
             }
         }
 
@@ -125,6 +163,19 @@ namespace WindowsFormsApplication1
                 total = total + 20;
                 string totals = total.ToString();
                 textBox2.Text = totals;
+
+
+                // takes the new total and divides it by 100 and then turns the result into a decimal it then converts that to a string and prints it.
+                decimal totalindec = (decimal)total / 100;
+                string dec_total = totalindec.ToString();
+                textBox1.Text = dec_total;
+
+
+                //divids total with number of credits and then turns the answer into a string and then prints
+                int credits = total / x;
+                string Ncredits = credits.ToString();
+                NumberCredits.Text = Ncredits;
+
             }
         }
 
@@ -149,6 +200,19 @@ namespace WindowsFormsApplication1
                 total = total + 1;
                 string totals = total.ToString();
                 textBox2.Text = totals;
+
+
+                // takes the new total and divides it by 100 and then turns the result into a decimal it then converts that to a string and prints it.
+                decimal totalindec = (decimal)total / 100;
+                string dec_total = totalindec.ToString();
+                textBox1.Text = dec_total;
+
+
+                //divids total with number of credits and then turns the answer into a string and then prints
+                int credits = total / x;
+                string Ncredits = credits.ToString();
+                NumberCredits.Text = Ncredits;
+
             }
         }
 
@@ -172,6 +236,19 @@ namespace WindowsFormsApplication1
                 total = total + 2;
                 string totals = total.ToString();
                 textBox2.Text = totals;
+
+
+                // takes the new total and divides it by 100 and then turns the result into a decimal it then converts that to a string and prints it.
+                decimal totalindec = (decimal)total / 100;
+                string dec_total = totalindec.ToString();
+                textBox1.Text = dec_total;
+
+
+                //divids total with number of credits and then turns the answer into a string and then prints
+                int credits = total / x;
+                string Ncredits = credits.ToString();
+                NumberCredits.Text = Ncredits;
+
             }
         }
 
@@ -197,7 +274,7 @@ namespace WindowsFormsApplication1
 
         private void CostPerCredit_TextChanged(object sender, EventArgs e)
         {
-            int x = int.Parse(CostPerCredit.Text);//takes the cost percredit and makes it an interger so that we can check if its less than or equal to 0
+ 
         
         }
 
@@ -221,6 +298,20 @@ namespace WindowsFormsApplication1
                 total = total + 100;
                 string totals = total.ToString();
                 textBox2.Text = totals;
+
+
+                // takes the new total and divides it by 100 and then turns the result into a decimal it then converts that to a string and prints it.
+                decimal totalindec = (decimal)total / 100;
+                string dec_total = totalindec.ToString();
+                textBox1.Text = dec_total;
+
+
+
+                //divids total with number of credits and then turns the answer into a string and then prints
+                int credits = total / x;
+                string Ncredits = credits.ToString();
+                NumberCredits.Text = Ncredits;
+
             }
         }
 
@@ -244,6 +335,19 @@ namespace WindowsFormsApplication1
                 total = total + 200;
                 string totals = total.ToString();
                 textBox2.Text = totals;
+
+
+                // takes the new total and divides it by 100 and then turns the result into a decimal it then converts that to a string and prints it.
+               decimal totalindec = (decimal)total / 100;
+               string dec_total = totalindec.ToString();
+                textBox1.Text = dec_total;
+
+
+
+                //divids total with number of credits and then turns the answer into a string and then prints
+                int credits = total / x;
+                string Ncredits = credits.ToString();
+                NumberCredits.Text = Ncredits;
             }
         }
 
@@ -270,6 +374,16 @@ namespace WindowsFormsApplication1
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NumberCredits_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

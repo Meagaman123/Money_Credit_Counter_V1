@@ -1,9 +1,9 @@
 C:\Users\giann\OneDrive\Documents\Visual Studio 2015\Projects\Money counter\Money counter\bin\Debug\Money counter.exe.config
 C:\Users\giann\OneDrive\Documents\Visual Studio 2015\Projects\Money counter\Money counter\obj\Debug\Money counter.csprojResolveAssemblyReference.cache
-C:\Users\giann\OneDrive\Documents\Visual Studio 2015\Projects\Money counter\Money counter\obj\Debug\WindowsFormsApplication1.Form1.resources
 C:\Users\giann\OneDrive\Documents\Visual Studio 2015\Projects\Money counter\Money counter\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\giann\OneDrive\Documents\Visual Studio 2015\Projects\Money counter\Money counter\obj\Debug\Money counter.csproj.GenerateResource.Cache
 C:\Users\giann\OneDrive\Documents\Visual Studio 2015\Projects\Money counter\Money counter\bin\Debug\Money counter.exe
 C:\Users\giann\OneDrive\Documents\Visual Studio 2015\Projects\Money counter\Money counter\bin\Debug\Money counter.pdb
 C:\Users\giann\OneDrive\Documents\Visual Studio 2015\Projects\Money counter\Money counter\obj\Debug\Money counter.exe
 C:\Users\giann\OneDrive\Documents\Visual Studio 2015\Projects\Money counter\Money counter\obj\Debug\Money counter.pdb
+C:\Users\giann\OneDrive\Documents\Visual Studio 2015\Projects\Money counter\Money counter\obj\Debug\WindowsFormsApplication1.MoneyCreditCounterv.resources
