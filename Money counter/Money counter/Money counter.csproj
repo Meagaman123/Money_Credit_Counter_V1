@@ -52,6 +52,7 @@
     <Compile Include="Money_Credit_Counter_v1.Designer.cs">
       <DependentUpon>Money_Credit_Counter_v1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyDialogs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Money_Credit_Counter_v1.resx">

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class Form1
+    partial class MoneyCreditCounterv
     {
         /// <summary>
         /// Required designer variable.
@@ -110,6 +110,7 @@
             this.twoPounds.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.twoPounds.TabIndex = 7;
             this.twoPounds.TabStop = false;
+            this.twoPounds.Click += new System.EventHandler(this.twoPounds_Click);
             // 
             // Pound
             // 
@@ -122,6 +123,7 @@
             this.Pound.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Pound.TabIndex = 6;
             this.Pound.TabStop = false;
+            this.Pound.Click += new System.EventHandler(this.Pound_Click);
             // 
             // FifteyPence
             // 
@@ -210,6 +212,7 @@
             this.Coins.Name = "Coins";
             this.Coins.Size = new System.Drawing.Size(303, 576);
             this.Coins.TabIndex = 8;
+            this.Coins.SelectedIndexChanged += new System.EventHandler(this.Coins_SelectedIndexChanged);
             // 
             // listBox2
             // 
@@ -231,6 +234,7 @@
             this.Reset.TabIndex = 11;
             this.Reset.Text = "Reset";
             this.Reset.UseVisualStyleBackColor = false;
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
             // 
             // pictureBox9
             // 
@@ -341,6 +345,7 @@
             this.label2.Size = new System.Drawing.Size(30, 31);
             this.label2.TabIndex = 29;
             this.label2.Text = "0";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -352,6 +357,7 @@
             this.label3.Size = new System.Drawing.Size(30, 31);
             this.label3.TabIndex = 30;
             this.label3.Text = "0";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -363,6 +369,7 @@
             this.label4.Size = new System.Drawing.Size(30, 31);
             this.label4.TabIndex = 31;
             this.label4.Text = "0";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -612,6 +619,7 @@
             this.NumberCredits.TabIndex = 53;
             this.NumberCredits.Text = "0";
             this.NumberCredits.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.NumberCredits.TextChanged += new System.EventHandler(this.NumberCredits_TextChanged);
             // 
             // CostPerCredit
             // 
@@ -621,6 +629,7 @@
             this.CostPerCredit.TabIndex = 54;
             this.CostPerCredit.Text = "0";
             this.CostPerCredit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.CostPerCredit.TextChanged += new System.EventHandler(this.CostPerCredit_TextChanged);
             // 
             // label26
             // 
@@ -662,6 +671,7 @@
             this.textBox1.TabIndex = 58;
             this.textBox1.Text = "0.00";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -671,6 +681,7 @@
             this.textBox2.TabIndex = 59;
             this.textBox2.Text = "0";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label29
             // 
@@ -683,7 +694,7 @@
             this.label29.TabIndex = 60;
             this.label29.Text = "To Buy Credits";
             // 
-            // Form1
+            // MoneyCreditCounterv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -742,8 +753,11 @@
             this.Controls.Add(this.TenPence);
             this.Controls.Add(this.OnePence);
             this.Controls.Add(this.Coins);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "MoneyCreditCounterv";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Money Credit Counter v2.0";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.twoPounds)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pound)).EndInit();
